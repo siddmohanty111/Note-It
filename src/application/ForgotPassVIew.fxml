@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ForgotPassController">
+   <center>
+      <AnchorPane prefHeight="403.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="209.0" layoutY="60.0" prefHeight="35.0" prefWidth="182.0" text="Forgot Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="securityAnswerInput" layoutX="226.0" layoutY="160.0" prefHeight="25.0" prefWidth="217.0" promptText="Answer" />
+            <Label layoutX="93.0" layoutY="129.0" prefHeight="19.0" prefWidth="119.0" text="Security Question">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="164.0" text="Enter Security Answer" />
+            <Label fx:id="securityQuestionLabel" layoutX="221.0" layoutY="125.0" prefHeight="28.0" prefWidth="221.0" text="Question" />
+            <TextField fx:id="newPasswordInput" layoutX="225.0" layoutY="206.0" prefHeight="25.0" prefWidth="219.0" promptText="Password" />
+            <TextField fx:id="confirmNewPasswordInput" layoutX="223.0" layoutY="239.0" prefHeight="25.0" prefWidth="219.0" promptText="Confirm Password" />
+            <Label layoutX="123.0" layoutY="210.0" text="New password" />
+            <Label layoutX="114.0" layoutY="243.0" text="Confirm password" />
+            <Button layoutX="315.0" layoutY="304.0" mnemonicParsing="false" onAction="#ResetPassword" prefHeight="33.0" prefWidth="126.0" text="Reset Password" />
+            <Label fx:id="passwordMatchLabel" layoutX="226.0" layoutY="272.0" prefHeight="17.0" prefWidth="212.0" textFill="#fc0101" />
+            <Label fx:id="answerStatus" layoutX="229.0" layoutY="185.0" prefHeight="17.0" prefWidth="212.0" textFill="#fc0101" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

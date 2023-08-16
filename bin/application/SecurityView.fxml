@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SecurityController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="88.0" layoutY="91.0" text="Old Password" />
+            <Label layoutX="86.0" layoutY="131.0" text="New Password" />
+            <Label layoutX="83.0" layoutY="174.0" text="Confirm New Password" />
+            <Label layoutX="88.0" layoutY="216.0" text="Security Question" />
+            <Label layoutX="93.0" layoutY="256.0" text="Security Answer" />
+            <TextField fx:id="oldPasswordField" layoutX="226.0" layoutY="87.0" prefHeight="25.0" prefWidth="257.0" />
+            <TextField fx:id="newPasswordField" layoutX="226.0" layoutY="127.0" prefHeight="25.0" prefWidth="257.0" />
+            <TextField fx:id="confirmNewPasswordField" layoutX="226.0" layoutY="170.0" prefHeight="25.0" prefWidth="257.0" />
+            <TextField fx:id="securityQuestionField" layoutX="226.0" layoutY="212.0" prefHeight="25.0" prefWidth="257.0" />
+            <TextField fx:id="securityAnswerField" layoutX="226.0" layoutY="252.0" prefHeight="25.0" prefWidth="257.0" />
+            <Label layoutX="159.0" layoutY="11.0" text="Change Password">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="426.0" layoutY="301.0" mnemonicParsing="false" onAction="#Submit" text="Submit" />
+            <Label fx:id="isConn" layoutX="38.0" layoutY="38.0" text="Status" />
+            <Label fx:id="oldPasswordWarning" layoutX="226.0" layoutY="108.0" prefHeight="20.0" prefWidth="253.0" textFill="RED" />
+            <Label fx:id="newPasswordWarning" layoutX="226.0" layoutY="153.0" prefHeight="20.0" prefWidth="255.0" textFill="RED" />
+            <Label fx:id="confirmPasswordWarning" layoutX="226.0" layoutY="191.0" prefHeight="20.0" prefWidth="231.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
